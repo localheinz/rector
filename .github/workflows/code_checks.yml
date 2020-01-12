@@ -100,7 +100,7 @@ jobs:
             -   run: composer install --no-progress
             -   run: |
                     php ci/check_services_in_yaml_configs.php
-                    php ci/run_all_sets.phpc
+                    php ci/run_all_sets.php
                     bin/rector sync-types
 
     fatal_scan:
